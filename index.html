@@ -26,7 +26,7 @@
       </nav>
       <header class="header__body">
         <div class="header__image--container">
-          <img src="assets/Birds eye view.jpeg" alt="">
+          <img src="assets/Birds eye view.jpeg" class="birds__eye--image">
         </div>
         <div class="header__content--container">
           <h1>Discover your next Golf Trip!</h1>
@@ -34,22 +34,35 @@
         </div>
         <div class="quick__search--container">
           <h3>Got a place in mind?</h3>
-          <input type="search" placeholder="Quick Search">
+          <input type="search" placeholder="Quick Search" onchange="onSearchChange(event)">
         </div>
       </header>
     </div>
   </section>
   <section>
     <div class="venue__search--heading">
-      <h3>Find your Course</h3>
+      <h3 class="venue__search--h3">Find your Course</h3>
       <input type="search" class="venue__search-bar" placeholder="Find using name or location">
     </div>
-    <div>
-      <h4>Featured Venues</h4>
-      <div></div>
+    <div class="featured__venue--header">
+      <h4 class="featured__venue--h4">Featured Venues</h4>
+      <div class="filter__search"></div>
     </div>
-    <div>
-      <div></div>
+    <div class="featured__venue--body">
+      <div class="array__container">
+        <div class="venue__array--container">
+          <div class="venue__logo">
+            <img src="assets/pebble beach logo.png" class="venue__logo">
+          </div>
+          <div class="venue__info">
+            <h4 class="venue__name"> Name: <span class="bold">Golf Links Course at Pebble Beach Golf Links</span></h4>
+              <div class="location__and--distance">
+                <p class="venue__zip-code">Zip_code: <span class="bold">93953</span></p>
+                <h5 class="venue__distance">Distance: <span class="bold">0</span></h5>
+              </div> 
+          </div>
+        </div>
+      </div>
     </div> 
   </section>
   <footer class="footer">
@@ -62,4 +75,5 @@
     </ul>
   </footer>
 </body>
+<script src="index.js"></script>
 </html>
